@@ -2,6 +2,7 @@
     --mybulue: #0a387e;
     --myblack:#000;
     --mywhite: #fff;
+    --topicf:"M PLUS Rounded 1c", sans-serif;
 }
 *{
     margin: 0;
@@ -9,16 +10,24 @@
     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
 }
+body{
+padding-top: 70px;
 
+}
 .navbar{
    display: flex;
    justify-content: space-around;
    align-items: center;
    gap: 30%;
-   margin-top: 10px;
    background: (255, 255, 255, 0.3);
    -webkit-backdrop-filter: blur(10px);
    backdrop-filter: blur(10px);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 80px;
+   z-index: 100;
 }
 
 .logo img{
@@ -52,6 +61,10 @@
     border-radius: 40px;
     background: var(--mybulue);
 }
+.joinus:hover{
+    background: #000;
+    color: #fff;
+}
 .joinus a{
     color:#fff;
     text-decoration: none;
@@ -83,6 +96,7 @@ navbar responsive */
         right:255%;
         background: var(--mybulue);
         padding: 100px;
+        border: 2px solid #000;
     }
     .listNav li{
         padding-bottom: 40px;
@@ -126,12 +140,25 @@ navbar responsive */
     color: #0a387e;
 }
 
+/* bluebackground */
+.bluebg{
+    width: 500px;
+    height: 500px;
+    background-color:#0a387e;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    z-index: -100;
+    border-radius: 50%;
+   filter: blur(100px);
+    
+}
 .hero{
     text-align: center;
 }
 .hero h1{
     font-size: 50px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-family: "Berkshire Swash", serif;
 }
 .hero h1 span{
     color: #0a387e;
@@ -157,7 +184,7 @@ navbar responsive */
 }
 .tools h3{
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "M PLUS Rounded 1c", sans-serif;
     color: #0a387e;
 }
 .toolsimg{
@@ -218,4 +245,115 @@ navbar responsive */
     font-size: 20px;
 }
 
+}
+
+/* ----------------------------------------------------------- */
+/* service */
+.services{
+    background: #0a387e;
+    min-height: 80vh;
+    color: #fff;
+    padding: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+.blackbg{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: -30%;
+    right: -100px;
+    background:#000;
+    border-radius: 50%;
+    filter: blur(100px);
+}
+.services h1{
+    text-align: center;
+    font-family:var(--topicf);
+    font-size: 40px;
+    margin-bottom: 20px;
+    
+}
+.services h6{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #000;
+    font-size: 20px;
+}
+.serviceRow{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    gap: 5%;
+
+}
+
+.serviceBox{
+    border: 2px solid #000;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    transition: 1s;
+   
+}
+.serviceBox:hover{
+    border: 2px solid #fff;
+}
+.serviceBox i{
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.serviceBox i:hover{
+    align-self: flex-end;
+}
+.service h5{
+    font-size: 20px;
+}
+.service p{
+    text-align: left;
+    color: #fff;
+
+
+}
+
+
+
+.service p button{
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: transparent;
+    text-decoration: underline;
+ 
+}
+.service p span{
+    display: none;
+}
+
+@media(max-width:900px){
+    .services{
+       overflow-y: auto;
+    }
+    .services h1{
+        font-size: 18px;
+    }
+    .services h6{
+        font-size: 15px;
+    }
+    .serviceRow{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        padding-bottom: 200px;
+
+    }
 }
