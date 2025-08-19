@@ -4,8 +4,8 @@ let show = document.querySelector(".show");
 let hide = document.querySelector(".hide");
 
 show.addEventListener("click", ()=>{
-    listNav.style.right = "5%";
-    joinUs.style.right = "25%";
+    listNav.style.right = "0";
+    joinUs.style.right = "18%";
 })
 
 hide.addEventListener("click",()=>{

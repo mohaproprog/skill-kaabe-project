@@ -16,7 +16,7 @@ padding-top: 70px;
 }
 .navbar{
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
    gap: 30%;
    background: (255, 255, 255, 0.3);
@@ -36,7 +36,7 @@ padding-top: 70px;
 
 .listNav{
     display: flex;
-    gap: 35%;
+    gap: 25%;
     list-style: none;
     position: relative;
 
@@ -88,7 +88,7 @@ padding-top: 70px;
 
 /* 
 navbar responsive */
-@media (max-width:900px){
+@media (max-width:1200px){
     .listNav{
         position: absolute;
         flex-direction: column;
@@ -106,7 +106,7 @@ navbar responsive */
     }
     .joinus{
         position: absolute;
-        bottom: -350px;
+        bottom: -370px;
         right: 255%;
         background:var(--mywhite);
     }
