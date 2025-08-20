@@ -459,7 +459,7 @@ navbar responsive */
 
 /* ------------------------------------------ */
 .testimonial{
-    min-height: 50vh;
+    height: 50vh;
     text-align: center;
 }
 .testimonial h1{
@@ -467,12 +467,15 @@ navbar responsive */
 }
 
 
+
 .testM{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10%;
     color: #fff;
+    position: relative;
 }
 
 .slider{
@@ -491,13 +494,13 @@ navbar responsive */
 }
 .reveiw img{
     width: 80px;
-    height: 80px;
+    height:80px;
     border-radius: 50%;
     border: 2px solid #fff;
-    background: #000;
+    background: transparent;
     position: absolute;
-    top:-30px;
-    left: 45%;
+    top:-35px;
+    left: 40%;
 }
 .reveiw p{
     padding: 20px;
@@ -518,4 +521,69 @@ navbar responsive */
 
 .reveiws .slide{
     display: block;
+}
+
+.imageTest{
+    background-color:#4a5668;
+    border-top-left-radius: 980px;
+    border-bottom-right-radius: 980px;
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+         
+}
+.imageTest img{
+     background-color:#333334;
+     border-top-left-radius: 980px;
+    border-bottom-right-radius: 980px;
+}
+.reveiw i{
+    color: #f29602;
+}
+
+.testM .bgt{
+    position: absolute;
+    width: 400px;
+    height:400px;
+    background: #0a387e;
+    border-radius: 50%;
+    top: -250px;
+    left: 35%;
+    filter: blur(150px);
+    border: 2px solid #000;
+    z-index: -2;
+}
+
+
+@media (max-width:1400px){
+    .testimonial h1{
+    font-size: 30px;
+}
+.testimonial p{
+    margin-bottom: 50px;
+}
+.reveiw img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: transparent;
+    position: absolute;
+    top:-30px;
+    left: 37%;
+}
+.imageTest{
+    width: 200px;
+    height: auto;
+         
+}
+.imageTest img{
+    width: 300px;
+    height: auto;
+    background-color:#333334;
+    border-bottom-right-radius: 980px;
+    border-bottom-right-radius: 980px
+}
+
+
 }
