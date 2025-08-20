@@ -48,3 +48,34 @@ seeMore.forEach(btnsee =>{
    
 
 })
+
+
+
+
+// -------------------------------------
+// testimonial
+const sliders = document.querySelectorAll(".reveiws .reveiw");
+let index = 0;
+
+function showSlide(i){
+    sliders.forEach(s=>{
+        s.classList.remove("slide");
+    })
+    let index = sliders[i].classList.add("slide");
+
+}
+
+const next = document.querySelector(".next");
+next.addEventListener("click",()=>{
+    index = (index +1)%sliders.length;
+    showSlide(index);
+})
+
+
+
+
+const prev = document.querySelector(".prev");
+prev.addEventListener("click",()=>{
+    index = (index -1 +sliders.length)% sliders.length;
+    showSlide(index);
+})

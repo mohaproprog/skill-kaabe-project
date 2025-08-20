@@ -147,7 +147,7 @@ navbar responsive */
 .container p{
     text-align: center;
 }
-.container p span{
+.container p a{
     color: #0a387e;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

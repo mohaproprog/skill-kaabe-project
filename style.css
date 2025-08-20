@@ -357,3 +357,165 @@ navbar responsive */
 
     }
 }
+
+
+
+/* ----------------------------------------------- */
+
+/* about me */
+.aboutMe{
+    min-height: 100vh;
+    margin-top: 30px;
+    position: relative;
+}
+.aboutMe h1{
+    text-align: center;
+    font-size: 50px;
+    color: #0a387e;
+}
+.aboutMe p{
+    text-align: center;
+
+}
+
+.about-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img-border{
+    flex: 1;
+    margin-left: 130px;
+}
+.about-col .aboutp{
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 20px;
+}
+.about-col .aboutp a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 20px;
+    background: #0a387e;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    
+
+}
+
+.aboutMe .logoMove img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 190px;
+    top: 5%;
+    z-index: -1;
+}
+
+@media (max-width:1000px){
+    .aboutMe h1{
+        font-size: 30px;
+    }
+    .aboutMe p {
+        font-size: 20px;
+        padding: 20px;
+        
+    }
+
+    .img-border{
+       margin: 0;
+    }
+    .img-border img{
+        width: 350px;
+        background-color:#4a5668;
+        border-top-left-radius: 280px;
+        box-shadow: 1px 1px 10px 1px #000;
+    }
+    .logoMove{
+        display: none;
+    }
+    .about-col{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------ */
+.testimonial{
+    min-height: 50vh;
+    text-align: center;
+}
+.testimonial h1{
+    font-size: 50px;
+}
+
+
+.testM{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    color: #fff;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reveiw{
+    text-align: center;
+    background: #0a387e;
+    padding: 20px;
+    margin: 0 50px;
+    border-radius: 20px;
+    position: relative;
+    display: none;
+}
+.reveiw img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #000;
+    position: absolute;
+    top:-30px;
+    left: 45%;
+}
+.reveiw p{
+    padding: 20px;
+    margin-top: 30px;
+
+}
+.reveiw h3{
+    color: #000;
+}
+
+.slider button{
+    color: #000;
+    font-size: 50px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.reveiws .slide{
+    display: block;
+}
