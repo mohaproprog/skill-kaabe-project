@@ -10,6 +10,20 @@
     box-sizing: border-box;
      font-family: "Poppins", sans-serif;
 }
+
+/* overfolowers */
+@media(max-width:1400px){
+    .bgt{
+        display: none;
+    }
+    .bluebg{
+        display: none;
+    
+    }
+    .blackbg{
+        display: none;
+    }
+}
 body{
 padding-top: 70px;
 
@@ -151,6 +165,7 @@ navbar responsive */
     z-index: -100;
     border-radius: 50%;
    filter: blur(100px);
+   overflow: hidden;
     
 }
 .hero{
@@ -266,6 +281,7 @@ navbar responsive */
     background:#000;
     border-radius: 50%;
     filter: blur(100px);
+    overflow: hidden;
 }
 .services h1{
     text-align: center;
