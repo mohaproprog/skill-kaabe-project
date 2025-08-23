@@ -659,3 +659,162 @@ navbar responsive */
 
 
 
+/* --------------------------------- */
+
+/* footer */
+
+.footer{
+    background: #0a387e;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+
+.upFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #fff;
+    gap: 5%;
+    flex-wrap: wrap;
+     
+    
+}
+
+.upFooter .oneFooter img{
+    width: 100px;
+
+} 
+.upFooter .oneFooter a{
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    width: 200px;
+    display: block;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    font-family:var(--topicf);
+    transition: 0.5s;
+}
+
+.upFooter .oneFooter a i{
+    font-size: 20px;
+}
+.upFooter .oneFooter a:hover{
+    background: #fff;
+    color: #000;
+    transform: scale(1.2);
+}
+
+
+/* 
+-------------------- twofooter------------- */
+.upFooter .twoFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.upFooter .twoFooter a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.upFooter .twoFooter a:hover{
+    transform: scale(1.2);
+    color: #fff;
+
+}
+
+
+/* ----------threeFooter------- */
+
+
+.upFooter .threeFooter{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upFooter .threeFooter a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.upFooter .threeFooter a:hover{
+    transform: scale(1.05);
+    color: #fff;
+}
+.upFooter .threeFooter p{
+    margin-top: 10px;
+}
+
+
+/* --------------------fourFooter----------------- */
+
+.upFooter .fourFooter{
+    margin-right: 40px;
+}
+.upFooter .fourFooter h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.upFooter .fourFooter i{
+    margin-right: 40px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.upFooter .fourFooter i:hover{
+    transform: scale(2);
+
+}
+
+/* --------------------------------- */
+
+/* downfooter */
+.downFooter{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media (max-width:900px){
+
+    .footer{
+        flex-direction: column;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .upFooter .twoFooter{
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
