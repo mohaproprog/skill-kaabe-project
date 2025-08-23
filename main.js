@@ -79,3 +79,9 @@ prev.addEventListener("click",()=>{
     index = (index -1 +sliders.length)% sliders.length;
     showSlide(index);
 })
+
+
+
+
+
+// ---------------------------------

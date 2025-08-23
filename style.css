@@ -475,7 +475,7 @@ navbar responsive */
 
 /* ------------------------------------------ */
 .testimonial{
-    height: 50vh;
+    min-height: 100vh;
     text-align: center;
 }
 .testimonial h1{
@@ -603,3 +603,59 @@ navbar responsive */
 
 
 }
+
+
+/* -------------------------------------- */
+/* faq section */
+.faq{
+    min-height: 50vh;
+    max-width: 600px;
+    margin: 100px auto 0 auto;
+    padding: 20px;
+
+}
+.faq h2{
+    color: #0a387e;
+}
+
+.faq details{
+    margin-top: 20px;
+    border: solid 2px #0a387e;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.faq details summary{
+    color: #0a387e;
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+
+.faq details[open]>summary{
+    color: #fff;
+}
+.faq details[open]{
+    background:#0a387e;
+    color: #fff;
+}
+.hideArrow{
+    display: none;
+}
+
+.faq details[open] .showArrow{
+    display: none;
+}
+.faq details[open] .hideArrow{
+    display: inline;
+}
+
+
+
