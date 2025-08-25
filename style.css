@@ -74,6 +74,7 @@ padding-top: 70px;
     padding: 10px 15px;
     border-radius: 40px;
     background: var(--mybulue);
+    margin-right: 20px;
 }
 .joinus:hover{
     background: #000;
@@ -669,7 +670,7 @@ navbar responsive */
     display: flex;
     flex-direction: column;
     gap: 15px;
-   
+   width: 100%;
 }
 
 .upFooter{
@@ -801,6 +802,7 @@ navbar responsive */
         flex-direction: column;
         margin-right: 20px;
         padding: 20px;
+        
     }
 
     .upFooter .twoFooter{

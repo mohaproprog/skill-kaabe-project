@@ -15,3 +15,24 @@ hide.addEventListener("click",()=>{
     joinUs.style.transition = "0.5s";
 
 });
+
+
+fetch("footer.html")
+.then(res=>{
+    if(!res.ok){
+        throw new error("HTTP error",+res.status);
+        
+        
+    }
+    return res.text();
+    
+})
+.then(data=>{
+    document.getElementById("footer").innerHTML = data;
+
+})
+.catch(err=>{
+    document.getElementById("footer").innerHTML = "you Failed to fetch the footer data"
+    console.log(err);
+    
+})
